@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Hasil Data Pembelian</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <div>Data Pembelian</div>
+    <hr>
+    <table border="1"> 
+    
+        <th>Nama Buah</th>
+        <th>Harga per kg (Rp)</th>
+            <th>Jumlah (Kg)</th>
+            <th>Harga Normal (Rp)</th>
+            <th>Diskon (%)</th>
+            <th>Harga Diskon (Rp)</th>
+            <th>Total Pembayaran (Rp)</th>
+            <th>Jumlah Uang yang dibayarkan (Rp)</th>
+        <tr>
+        <td th:text="${nama}"></td>
+        <td th:text="${harga}"></td>
+        <td th:text="${jumlahbeli}"></td>
+        <td th:text="${jumlahnormal}"></td>
+        <td th:text="${diskon}"></td>
+        <td th:text="${jumlahdiskon}"></td>
+        <td th:text="${totalbayar}"></td>
+        <td th:text="${uangpembeli}"></td>
+    </tr>
+    </table>
+    <br> 
+  
+
+     <th>Tampilan Transaksi</th>
+
+    <br>
+        <td th:text="${kembalian}"></td>
+</body>
+</html>
